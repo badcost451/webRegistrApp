@@ -1,0 +1,57 @@
+<ion-content [fullscreen]="true" class="fondo">
+
+  <div class="logo my-5"></div>
+  <div class="container rounded  texto ">
+
+    <div class="titulo ">Iniciar sesion</div>
+    <div class="container1">
+      <div class="row">
+        <div class="col-12">
+          <ion-input style = 'font-weight: bolder;' class=" bordeA text-dark ion-text-center" [(ngModel)]="correo" label="Usuario"
+            labelPlacement="floating" placeholder="Ingrese usuario:"></ion-input>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 ">
+          <ion-input style="font-size: medium; font-weight: bolder;" class="hola bordeB text-dark ion-text-center" [(ngModel)]="passs"
+            label="Contraseña" type="password" labelPlacement="floating" placeholder="Ingrese contraseña:  ">
+          </ion-input>
+        </div>
+      </div>
+    </div>
+    <div style="margin: 15px;">
+      <div class="row">
+
+        <div class="col-2" style="margin-top: 60px;"></div>
+        <div class="row">
+          <button class=" col-12 btn btn-warning rounded expand boton" (click)="irMenu()" >
+            <p class="TextIngresar">Ingresar</p>
+          </button>
+        </div>
+
+
+        <!--volver al apartado alumno -->
+        <div class="col-2" style="margin-top: 60px;"></div>
+        <div class="row">
+          <button class=" col-12 btn btn-warning rounded expand boton" >
+            <p class="TextIngresar">Ingresar como alumno</p>
+          </button>
+        </div>
+        <div class="olvidarcontra">
+          <h5><a style="color:  rgb(8, 8, 8);" >Olvidaste tu contraseña?</a></h5>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+</ion-content>
+
+
+<ion-footer>
+
+
+</ion-footer>

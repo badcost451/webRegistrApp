@@ -1,0 +1,90 @@
+<!-- <ion-menu contentId="main-content" style="color: rgb(3, 3, 3);">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>RegistrApp</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding ">
+    <div class="container p-2 " style="color: aliceblue;">
+
+      <div>
+        <img src="../../../assets/img/duoc_uc_logo.PNG" alt="hola">
+      </div>
+
+      <div class="my-5">
+        <h1 style="text-align: center;" class="p-1">Nombre de usuario</h1>
+      </div>
+
+      <div class="perfil">
+        <img src="../../../assets/img/USUARIOLOGO.png" class="" alt="hola">
+      </div>
+
+      <div class="Asistencia">
+        <ion-button style="color: aliceblue;" fill="clear" >Asistencia</ion-button>
+      </div>
+
+      <div class="espacio">
+        <ion-button style="color: aliceblue;" fill="clear" >Cerrar sesión</ion-button>
+      </div>
+
+      <div>
+        <a class="terminos" fill="clear" href="https://www.anthology.com/trust-center/privacy-statement">Privacidad</a>
+      </div>
+      <div>
+        <a class="terminos" fill="clear" href="https://www.anthology.com/trust-center/terms-of-use">Condiciones</a>
+      </div>
+    </div>
+  </ion-content>
+</ion-menu> -->
+
+<ion-content [fullscreen]="true" class="fondo">
+  <div class="container-fluid">
+    <div class="text-center my-3">
+      <h1
+        style="height: 60px; border-bottom: solid 1px black"
+        class="text-dark">
+        Secciones actuales
+      </h1>
+      <div class="container-fluid">
+        <div class="row text-dark">
+          <img
+            (click)="goBack()"
+            class="col-2 img-volver"
+            role="button"
+            style="border-radius: 50%; width: 70px; height: 60px"
+            src=""
+            alt=""
+          />
+          <div class="col-3 texte-start text-dark">
+            <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif"></h3>
+          </div>
+        </div>
+      </div>
+      <div style="height: 30px; border-bottom: solid 1px black"></div>
+    </div>
+    <div class="container">
+      <div>
+        <div>
+          <!-- <app-seccion-prof role="button" 
+              [nombreSeccion]="asi.nombre_seccion">
+            </app-seccion-prof> -->
+          <!-- (click)="irSeccion()" -->
+        </div>
+      </div>
+
+      <!-- <div *ngFor="let sec of listar_seccion">
+          <app-seccion-prof [nombreSeccion]="sec.nombre_seccion.toString()"></app-seccion-prof>
+
+
+
+
+        </div> -->
+      <!-- <div *ngFor="let asig of listado_asignatura">
+                    
+            <app-seccion role="button"
+            (click)="irSeccion(asig.nombre_asignatura)"
+            [nombreAsignatura]="asig.nombre_asignatura"></app-seccion>
+        </div> -->
+    </div>
+  </div>
+</ion-content>

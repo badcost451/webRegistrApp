@@ -1,0 +1,85 @@
+<ion-content [fullscreen]="true" class="fondo">
+  <div class="container-fluid">
+    <div class="text-center my-3">
+      <h1
+        style="height: 60px; border-bottom: solid 1px black"
+        class="text-dark"
+      >
+        Registro de asistencia
+      </h1>
+      <div class="container-fluid">
+        <div class="row text-dark">
+          <img
+            class="col-2 img-volver"
+            role="button"
+            style="border-radius: 50%; width: 70px; height: 60px"
+            src="../../../assets/img/volver.jpg"
+            alt=""
+            (click)="goBack()"
+          />
+          <div class="col-3 text-dark">
+            <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif"></h3>
+          </div>
+        </div>
+      </div>
+      <div style="height: 30px; border-bottom: solid 1px black"></div>
+    </div>
+    <div
+      class="container text-dark p-5 my-5"
+      style="background-color: rgba(240, 248, 255, 0.479)"
+    >
+      <div
+        class="row text-center bg-dark text-white"
+        style="font-size: x-large; border: solid 2px black"
+      >
+        <div class="col-3">Alumno</div>
+        <div class="col-3">Clases asistida</div>
+        <div class="col-3">Estado</div>
+        <div class="col-3">Porcentaje de asistencia</div>
+      </div>
+      <div class="row p-4 text-center" style="border: solid 2px black">
+        <!-- nombre de los estudiantes -->
+        <div class="col-3">
+          <h3>claudio</h3>
+        </div>
+        <div class="col-3">
+          <h3>17/20</h3>
+        </div>
+        <div class="col-3" style="color: green">
+          <h3>asistido</h3>
+        </div>
+        <div class="col-3">
+          <h3>89%</h3>
+        </div>
+      </div>
+      <div class="row p-4 text-center" style="border: solid 2px black">
+        <div class="col-3">
+          <h3>seba</h3>
+        </div>
+        <div class="col-3">
+          <h3>10/20</h3>
+        </div>
+        <div class="col-3" style="color: red">
+          <h3>reprobado</h3>
+        </div>
+        <div class="col-3">
+          <h3>40%</h3>
+        </div>
+      </div>
+      <div class="row p-4 text-center" style="border: solid 2px black">
+        <div class="col-3">
+          <h3>pepon</h3>
+        </div>
+        <div class="col-3">
+          <h3>18/20</h3>
+        </div>
+        <div class="col-3" style="color: green">
+          <h3>asistido</h3>
+        </div>
+        <div class="col-3">
+          <h3>87%</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
