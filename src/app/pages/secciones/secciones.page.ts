@@ -32,19 +32,7 @@ export class SeccionesPage implements OnInit {
     this.location.replaceState('/login');
     this.location.replaceState('/login-profe');
   }
-
-
-  // async logout() {
-  //   await signOut(this.auth).then(() => this.router.navigate(['/login']));
-  //   this.router.navigate(['/login-profe']);
-  // }
-  // listarSeccion() {
-  //   this.servApi.listar_seccion().subscribe((data) => {
-  //     console.log(data);
-  //     this.listar_seccion = JSON.parse(JSON.stringify(data));
-  //   });
-
-  }
+}
 
   
   

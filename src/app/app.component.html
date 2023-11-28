@@ -1,3 +1,37 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
+<ion-app class="hola">
+  <!-- Menú lateral -->
+  <ion-menu contentId="main-content" type="overlay">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>RegistrApp</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding ">
+      <div class="container p-2 " style="color: aliceblue;">
+        <div>
+          <h1 style="text-align: center;" class="p-5">Nombre de usuario</h1>
+        </div>
+        <div>
+          <ion-button style="color: aliceblue;" fill="clear"><ion-icon class="iconosBotones"
+              name="book-outline"></ion-icon>Asignaturas</ion-button>
+          <ion-button style="color: aliceblue;" fill="clear"><ion-icon class="iconosBotones"
+              name="log-out-outline"></ion-icon>Cerrar sesión</ion-button>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: flex-end; height: 50vh;">
+          <div>
+            <ion-icon class="iconos" name="lock-closed-outline"></ion-icon><a class="terminos" fill="clear"
+              href="https://www.anthology.com/trust-center/privacy-statement">PRIVACIDAD</a>
+          </div>
+          <div>
+            <ion-icon class="iconos" name="newspaper-outline"></ion-icon><a class="terminos" fill="clear"
+              href="https://www.anthology.com/trust-center/terms-of-use">CONDICIONES</a>
+          </div>
+        </div>
+      </div>
+    </ion-content>
+  </ion-menu>
+  <!-- Contenido principal -->
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+
+
 </ion-app>

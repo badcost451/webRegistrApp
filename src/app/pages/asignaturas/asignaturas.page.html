@@ -1,0 +1,19 @@
+<ion-content [fullscreen]="true" class="fondo">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Asignaturas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<div class="container p-3 mo">
+  <app-asignatura-cards></app-asignatura-cards>
+
+  <!-- <div *ngFor="let data of datosCombinados">
+      <app-asignatura role="button" (click)="irQR(data.nombreProfesor, data.nombreAsignatura)"
+        [nombreProfesor]="data.nombreProfesor" [nombreAsignatura]="data.nombreAsignatura"></app-asignatura>
+    </div> -->
+</div>
+</ion-content>
